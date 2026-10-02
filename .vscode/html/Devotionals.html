@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Devotionals.css">
+<title>Daily Devotion - Faith Connect Youth</title>
+
+</head>
+<body>
+
+<header>
+  <div class="logo">Faith Connect Youth
+    <img src="bible.jpg" class="bible-green" alt="Bible"> 
+  </div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="#" class="active">Devotion</a>
+    <a href="biblestdy.html">Bible Study</a>
+    <a href="prayer.html">Prayer Room</a>
+    <a href="forum.html">Forum</a>
+    <a href="events.html">Events</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div>
+    <h1 id="title">Jesus, I Want to Know You</h1>
+    <div class="ref" id="ref">LUKE 6:7-9</div>
+    <div class="date" id="date"></div>
+    <div class="stats">
+    </div>
+  </div>
+  <div class="hero-card">
+    <h3>TODAY'S PRAYER</h3>
+    <p id="prayerPreview">Jesus, you are my Lord, my Savior, the one who guides me every day...</p>
+    <button class="btn btn-blue" style="margin-top:15px; width:100%" id="amenBtn">Say Amen 🙏 </button>
+  </div>
+</div>
+
+<div class="main">
+  <div class="sidebar">
+    <h3>All Devotions</h3>
+    <div class="dev-list" id="devList"></div>
+  </div>
+
+  <div class="content-area">
+    <div class="author">
+      <div class="av" id="av">F</div>
+      <div><b id="author">Theophillus Sunday</b><br><small id="authorRole" style="color:#64748b">Daily Writer</small></div>
+      <span id="moodBtn" style="margin-left:auto; background:#dbeafe; color:#1e40af; padding:6px 12px; border-radius:20px; font-size:12px; cursor:pointer">😊 Mood</span>
+    </div>
+    <div class="text" id="text"></div>
+    <div class="prayer-box">
+      <h3>PRAYER</h3>
+      <p id="prayerText"></p>
+    </div>
+    <div class="actions">
+      <button class="btn btn-blue" id="nextBtn">Next Devotion →</button>
+      <button class="btn btn-black" id="prevBtn">← Previous</button>
+    </div>
+  </div>
+</div>
+<footer><p>&copy;2026 Faith Connect Youth | Contact us | Follow on Social Media</p></footer>
+<script src="Devotionals.js"></script>
+</body>
+</html>

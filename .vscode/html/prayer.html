@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prayer Wall - Faith Connect Youth</title>
+<link rel="stylesheet" href="prayer.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Faith Connect Youth
+    <img src="bible.jpg" class="bible-green" alt="Bible"> 
+  </div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="Devotionals.html">Devotion</a>
+    <a href="biblestdy.html">Bible Study</a>
+    <a href="#" class="active">Prayer Room</a>
+     <a href="forum.html">Forum</a>
+    <a href="events.html">Events</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div>
+    <h1>Prayer Room🙏</h1>
+    <p>✝️Share your burden. Pray for others. We are family. No one prays alone here. <br> This is more than a wall, it is an altar where hearts meet. Come as you are — broken, grateful, anxious, hopeful. Drop your prayer and pick up someone else's burden in prayer.<br> When you pray for one, heaven remembers you too. We may be from different places, but in Christ we are one family, standing in the gap for each other day and night. <br>Your story matters, your prayer counts, and God is listening right now.✝️</p>
+  </div>
+  <div class="card" style="background:white;color:#0f172a">
+    <h3 style="font-size:14px;color:#1e40af;letter-spacing:1px">SHARE YOUR PRAYER</h3>
+    <input id="pName" placeholder="Your name (or Anonymous)">
+    <select id="pCat">
+      <option value="General">General</option>
+      <option value="Healing">Healing</option>
+      <option value="Youth">Youth & Purpose</option>
+      <option value="Family">Family</option>
+      <option value="Exams">Exams / School</option>
+    </select>
+    <textarea id="pText" placeholder="Write your prayer request here..."></textarea>
+    <button class="btn btn-blue" id="postBtn" style="width:100%;margin-top:10px">Post Prayer 🙏</button>
+  </div>
+</div>
+
+<div class="container">
+  <div>
+    <div class="section-head">
+      <h2>Recent Prayers</h2>
+      <select id="filter" style="width:150px">
+        <option value="all">All</option>
+        <option value="Healing">Healing</option>
+        <option value="Youth">Youth</option>
+        <option value="Family">Family</option>
+        <option value="Exams">Exams</option>
+      </select>
+    </div>
+    <div id="prayerList"></div>
+  </div>
+
+  <div class="side">
+    <div class="card">
+      <h3 style="font-size:14px;margin-bottom:10px">📺 How to Pray - Videos</h3>
+      <div class="videos" id="videoGrid"></div>
+    </div>
+
+    <div class="verse-box">
+      <b style="color:#60a5fa">PRAYER TIP:</b><br>
+      Don't just read for knowledge, read for transformation. When you pray for others, God moves for you. God will hear.
+    </div>
+
+    <div class="card">
+      <h3 style="font-size:14px">Today's Word</h3>
+      <p style="font-size:13px;color:#64748b;margin-top:8px;line-height:1.6" id="dailyWord">"Pray without ceasing." - 1 Thess 5:17<br>God is listening right now.</p>
+      <button class="btn btn-outline" style="width:100%;margin-top:10px" id="copyWordBtn">Copy Word</button>
+    </div>
+  </div>
+</div>
+<footer>
+<p>&copy; 2026 Faith Connect Youth | Contact us | Follow on Social Media</p>
+</footer>
+</body><script src="prayer.js"></script>
+</html>

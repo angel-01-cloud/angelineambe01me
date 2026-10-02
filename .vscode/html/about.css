@@ -1,0 +1,215 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',sans-serif
+}
+body{
+  background:#f8fafc;
+  color:#0f172a
+}
+header{
+  background: linear-gradient(90deg, #000, #0f172a 70%, #1e40af);
+  color:white;
+  padding:16px 40px;
+  display:flex; 
+  justify-content:space-between; 
+  align-items:center;
+  position:sticky; 
+  top:0;
+   z-index:30;
+}
+.logo{
+  font-weight:800;
+  font-size:19px
+}
+ .bible-green{
+  width: 45px; 
+  height: 50px;
+  object-fit:cover;
+  border-radius:8px;
+}
+nav{
+  display:flex;
+  gap:22px
+}
+nav a{
+  color:#94a3b8;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:600
+}
+nav a.active{
+  color:white;
+  border-bottom:2px solid #3b82f6;
+  padding-bottom:4px
+}
+
+.hero{
+  background: linear-gradient(135deg, #000 0%, #0f172a 50%, #1e3a8a 100%);
+  color:white; 
+  padding:70px 40px;
+  text-align:center;
+}
+.hero h1{
+  font-size:44px;
+  line-height:1.1
+}
+.hero h1 span{
+  color:#60a5fa
+}
+.hero p{
+  color:#94a3b8;
+  margin:14px auto 0 auto;
+  max-width:650px;
+  line-height:1.6;
+  font-size:15px
+}
+.btn{
+  padding:12px 20px;
+  border-radius:10px;
+  border:none;
+  font-weight:800;
+  cursor:pointer;
+  font-size:13px
+}
+.btn-blue{
+  background:#1e40af;
+  color:white
+}
+.btn-white{
+  background:white;
+  color:#000;
+}
+.container{
+  padding:40px;
+  max-width:1200px;
+  margin:0 auto;
+}
+.grid-2{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+}
+.card{
+  background:white;
+  border-radius:16px;
+  border:1px solid #e2e8f0;
+  padding:24px;
+}
+.title{
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:1.5px;
+  color:#1e40af;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.card h2{
+  font-size:22px;
+  margin-bottom:8px;
+}
+.card p{
+  font-size:14px;
+  color:#475569;
+  line-height:1.7;
+}
+
+.team{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin-top:16px;
+}
+.member{
+  background:white;
+  border:1px solid #e2e8f0;
+  border-radius:16px;
+  padding:20px;
+  text-align:center;
+}
+.avatar{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#000,#1e40af);
+  color:white;
+  display:grid;
+  place-items:center;
+  font-weight:900;
+  font-size:20px;
+  margin:0 auto 10px auto;
+}
+.member h4{
+  font-size:14px;
+}
+.member small{
+  color:#64748b;
+  font-size:12px
+}
+.faq{
+  margin-top:10px
+}
+.faq-item{
+  border:1px solid #e2e8f0;
+  border-radius:12px;
+  margin-bottom:10px;
+  background:white;
+  overflow:hidden;
+}
+.faq-q{
+  padding:14px 18px;
+  font-weight:700;
+  font-size:14px;
+  cursor:pointer;
+  display:flex;
+  justify-content:space-between;
+}
+.faq-a{
+  padding:0 18px 14px 18px;
+  font-size:13px;
+  color:#64748b;
+  line-height:1.6;
+  display:none;
+}
+.faq-item.open .faq-a{
+  display:block
+}
+.faq-item.open{
+  border-color:#1e40af
+}
+footer{
+  background:#000;
+  color:#64748b;
+  text-align:center;
+  padding:30px 20px;
+  margin-top:40px;
+}
+footer b{
+  color:white
+}
+
+@media(max-width:900px){
+ .hero{
+  padding:40px 20px
+ }
+ .hero h1{
+  font-size:30px
+ }
+ .stats{
+  grid-template-columns:repeat(2,1fr);
+  padding:0 20px;
+ }
+ .container{
+  padding:20px;
+ }
+ .grid-2{
+  grid-template-columns:1fr
+ }
+ .team{
+  grid-template-columns:1fr
+ }
+ header{
+  padding:14px 20px;
+ }
+}

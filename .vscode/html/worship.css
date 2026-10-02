@@ -1,0 +1,80 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+body{background:#f8fafc;color:#0f172a;padding-bottom:90px}
+header{
+  background: linear-gradient(90deg, #000, #0f172a 70%, #1e40af);
+  color:white; padding:16px 40px; display:flex; justify-content:space-between; align-items:center;
+  position:sticky; top:0; z-index:30;
+}
+.logo{font-weight:800;font-size:19px}
+  .bible-green{
+  width: 45px; /* small size - change to 35px if you want smaller */
+  height: 50px;
+  object-fit:cover;
+  border-radius:8px;
+}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:#94a3b8;text-decoration:none;font-size:14px;font-weight:600}
+nav a.active{color:white;border-bottom:2px solid #3b82f6;padding-bottom:4px}
+
+.hero{
+  background: linear-gradient(135deg, #000, #0f172a, #1e3a8a);
+  color:white; padding:35px 40px; display:flex; justify-content:space-between; align-items:center; gap:20px;
+}
+.hero h1{font-size:34px}
+.hero h1 span{color:#60a5fa}
+.hero p{color:#94a3b8;margin-top:8px}
+.btn{padding:11px 18px;border-radius:10px;border:none;font-weight:700;cursor:pointer;font-size:13px}
+.btn-blue{background:#1e40af;color:white}
+.btn-black{background:#000;color:white}
+
+.container{display:grid;grid-template-columns:2fr 1fr;gap:28px;padding:30px 40px;max-width:1400px;margin:0 auto}
+.card{background:white;border-radius:16px;border:1px solid #e2e8f0;padding:20px}
+
+.search{display:flex;gap:10px;margin-bottom:16px}
+.search input{flex:1;padding:12px;border-radius:10px;border:1px solid #cbd5e1}
+
+.song{border:1px solid #e2e8f0;border-radius:14px;padding:12px 14px;display:flex;align-items:center;gap:12px;margin-bottom:10px;cursor:pointer;transition:0.2s;background:white}
+.song:hover{border-color:#1e40af;transform:translateY(-1px)}
+.song.active{background:#000;color:white;border-color:#000}
+.song.active small{color:#94a3b8}
+.song img{width:48px;height:48px;border-radius:10px;object-fit:cover;background:#000}
+.song-info{flex:1}
+.song-info b{font-size:13px;display:block}
+.song-info small{font-size:11px;color:#64748b}
+.play-btn{width:36px;height:36px;border-radius:50%;background:#1e40af;color:white;border:none;display:grid;place-items:center;cursor:pointer;font-weight:800}
+
+.side{position:sticky;top:85px;height:fit-content;display:flex;flex-direction:column;gap:20px}
+.lyrics{max-height:260px;overflow-y:auto;font-size:13px;color:#475569;line-height:1.8;white-space:pre-line}
+
+/* PLAYER BAR */
+.player{
+  position:fixed;bottom:0;left:0;right:0;background:#000;color:white;
+  padding:12px 20px;display:flex;align-items:center;gap:14px;z-index:50;
+  border-top:1px solid #1e3a8a;
+}
+.player img{width:52px;height:52px;border-radius:10px;object-fit:cover}
+.player-info{flex:1}
+.player-info b{font-size:13px}
+.player-info small{font-size:11px;color:#94a3b8}
+.progress{flex:1.5;display:flex;align-items:center;gap:10px}
+.progress input{width:100%;accent-color:#3b82f6}
+.controls{display:flex;gap:8px;align-items:center}
+.ctrl{width:36px;height:36px;border-radius:50%;border:none;cursor:pointer;font-weight:800;display:grid;place-items:center}
+.ctrl-play{background:#1e40af;color:white;width:44px;height:44px}
+.ctrl-sec{background:#1a1a1a;color:white}
+footer{
+    background:#000; 
+    color:#94a3b8;
+    text-align:center;
+    padding:20px; 
+    margin-top:30px;
+    font-size:13px
+    }
+
+@media(max-width:900px){
+.hero{flex-direction:column;align-items:flex-start;padding:25px 20px}
+.container{grid-template-columns:1fr;padding:20px}
+.player{flex-wrap:wrap}
+.progress{order:3;width:100%}
+header{padding:14px 20px}
+}

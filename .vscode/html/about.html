@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Faith Connect Youth</title>
+<link rel="stylesheet" href="about.css">
+</head>
+<body>
+<header>
+  <div class="logo">Faith Connect Youth
+     <img src="bible.jpg" class="bible-green" alt="Bible"> 
+</div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="Devotionals.html">Devotion</a>
+    <a href="biblestdy.html">Bible Study</a>
+    <a href="prayer.html">Prayer Room</a>
+    <a href="forum.html">Forum</a>
+    <a href="events.html">Events</a>
+    <a href="#" class="active">About</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>We Are <span>Faith Connect</span> Youth 🔥</h1>
+  <p>We are not a church program. We are a family of young people on fire for Jesus, raising a generation that will not bow to this world.</p>
+  <div style="margin-top:22px;display:flex;gap:10px;justify-content:center">
+    <button class="btn btn-blue" onclick="document.getElementById('mission').scrollIntoView({behavior:'smooth'})">Our Mission</button>
+    <button class="btn btn-white" onclick="alert('Welcome to the family! Join us on WhatsApp.')">Join Family</button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="grid-2" id="mission">
+    <div class="card">
+      <div class="title">Our Mission</div>
+      <h2>To Connect Youth To Faith</h2>
+      <p>Faith Connect Youth was born in Douala with one burden: youths are lost in drugs, sex, depression and fake life on social media. We want to bring them back to Jesus with real talk, not religion.</p>
+      <p style="margin-top:10px">We do this through daily devotionals, bible study, prayer wall, forum and physical events.</p>
+    </div>
+    <div class="card" style="background:#000;color:white;border:none">
+      <div class="title" style="color:#60a5fa">Our Vision</div>
+      <h2 style="color:white">A Generation On Fire</h2>
+      <p style="color:#94a3b8">To raise 10,000 youths across Cameroon who know the Word, live pure, and win souls. Not church goers, but disciples.</p>
+      <p style="margin-top:10px;color:#60a5fa;font-weight:700">Habakkuk 2:14 - For the earth shall be filled with the knowledge of the glory of the LORD.</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:24px">
+    <div class="title">Our Values </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:12px">
+      <div><b style="font-size:14px">🔵 Faith</b><p style="font-size:13px;color:#64748b;margin-top:4px">We believe the Bible is true and Jesus is the only way.</p></div>
+      <div><b style="font-size:14px">⚫ Purity</b><p style="font-size:13px;color:#64748b;margin-top:4px">We stand for purity in a dirty world. No compromise.</p></div>
+      <div><b style="font-size:14px">⚪ Family</b><p style="font-size:13px;color:#64748b;margin-top:4px">No one walks alone. We lift each other in love.</p></div>
+    </div>
+  </div>
+
+  <div class="grid-2" style="margin-top:24px">
+    <div>
+      <div class="title">Meet The Team</div>
+      <div class="team">
+        <div class="member"><div class="avatar">AA</div><h4>Ambe Angeline</h4><small>Founder</small></div>
+        <div class="member"><div class="avatar">LS</div><h4>Lum Sarah</h4><small>Youth Leader</small></div>
+        <div class="member"><div class="avatar">AR</div><h4>Agbor Robin</h4><small>Media & Events</small></div>
+      </div>
+      <div class="card" style="margin-top:16px">
+        <div class="title">Contact Us</div>
+        <p style="font-size:13px;line-height:1.8">
+        📍 Douala, Cameroon - Bonaberi<br>
+        📞 +237 680-494-489<br>
+        📧 faithconnectyouth@gmail.com<br>
+        📱 WhatsApp Group - DM for link
+        </p>
+        <button class="btn btn-blue" style="width:100%;margin-top:12px" onclick="document.getElementById('msgBox').style.display='block'">Send Message</button>
+        <div id="msgBox" style="display:none;margin-top:10px">
+          <input id="msgName" placeholder="Your name" style="width:100%;padding:10px;border-radius:10px;border:1px solid #cbd5e1">
+          <textarea id="msgText" placeholder="Your message" style="width:100%;height:80px;margin-top:8px;padding:10px;border-radius:10px;border:1px solid #cbd5e1"></textarea>
+          <button class="btn btn-black" style="width:100%;margin-top:8px" onclick="sendMsg()">Send 🚀</button>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="title">FAQ</div>
+      <div class="faq" id="faqList"></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <b>Faith Connect Youth</b><br>
+   For Jesus, For Youth, For Life <br>Built with faith 🔥
+   <p>&copy; 2026 Faith Connect Youth | Contact us | Follow on Social Media</p> </small>
+   
+</footer>
+<script src="about.js"></script>
+</body>
+</html>

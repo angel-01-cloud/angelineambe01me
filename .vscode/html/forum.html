@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forum - Faith Connect Youth</title>
+<link rel="stylesheet" href="forum.css">
+</head>
+<body>
+<header>
+  <div class="logo">Faith Connect Youth
+     <img src="bible.jpg" class="bible-green" alt="Bible">
+  </div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="Devotionals.html">Devotion</a>
+    <a href="biblestdy.html">Bible Study</a>
+    <a href="prayer.html">Prayer Room</a>
+    <a href="#" class="active">Forum</a>
+    <a href="events.html">Events</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div>
+    <h1>Youth Forum 💬</h1>
+    <p>Real talk. Real faith. Ask questions, share testimonies, get answers. We are family, no question is too small.</p>
+  </div>
+  <button class="btn btn-blue" onclick="document.getElementById('newTopicCard').scrollIntoView({behavior:'smooth'})">+ New Topic</button>
+</div>
+
+<div class="container">
+  <div>
+    <div class="card" style="margin-bottom:20px" id="newTopicCard">
+      <h3 style="font-size:14px;color:#1e40af">START A DISCUSSION</h3>
+      <input id="tTitle" placeholder="Topic title e.g. How to stay pure as a youth?">
+      <select id="tCat">
+        <option value="Youth">Youth & Purpose</option>
+        <option value="Bible">Bible Questions</option>
+        <option value="Life">Life & Struggles</option>
+        <option value="Question">Ask Anything</option>
+      </select>
+      <textarea id="tText" placeholder="Write your message..."></textarea>
+      <button class="btn btn-black" id="postTopic" style="width:100%;margin-top:10px">Post Topic 🚀</button>
+    </div>
+
+    <div class="search-bar">
+      <input id="search" placeholder="Search forum...">
+      <button class="btn btn-outline" onclick="document.getElementById('search').value=''; renderTopics(topics)">Clear</button>
+    </div>
+    <div class="filters" id="filters">
+      <button class="filter active" data-cat="all">All</button>
+      <button class="filter" data-cat="Youth">Youth</button>
+      <button class="filter" data-cat="Bible">Bible</button>
+      <button class="filter" data-cat="Life">Life</button>
+      <button class="filter" data-cat="Question">Questions</button>
+    </div>
+
+    <div id="topicList"></div>
+  </div>
+     <div class="card" style="background:#000;color:white;border:none">
+  <h3 style="font-size:13px;color:#60a5fa;letter-spacing:1px">COMMUNITY RULES</h3>
+  <p style="font-size:12.5px;color:#cbd5e1;line-height:1.9;margin-top:10px">
+  <b style="color:white">1. Christ First</b> - Everything we do is to glorify Jesus.<br>
+  <b style="color:white">2. Respect Everyone</b> - No insult, no tribalism, no hate speech.<br>
+  <b style="color:white">3. No Judgment</b> - No question is stupid. Ask freely.<br>
+  <b style="color:white">4. Keep It Pure</b> - No sexual content, nude images, or dirty jokes.<br>
+  <b style="color:white">5. No Spamming</b> - No ads, betting links, or self-promotion.<br>
+  <b style="color:white">6. Confidentiality</b> - What is shared here stays here. Don't screenshot prayers.<br>
+  <b style="color:white">7. No Inbox Request</b> - Don't ask "DM me" in public. Stay safe, especially ladies.<br>
+  <b style="color:white">8. Encourage, Don't Argue</b> - Correct with scripture, not anger.<br>
+  <b style="color:white">9. No False Doctrine</b> - Don't teach what is not in the Bible.<br>
+  <b style="color:white">10. Be Honest</b> - No fake testimonies or fake miracles for likes.<br>
+  <b style="color:white">11. No Politics</b> - No political party campaigns or insults to leaders.<br>
+  <b style="color:white">12. Use Clean Language</b> - No cursing, even short forms like wtf.<br>
+  <b style="color:white">13. Stay On Topic</b> - Post in the right category (Youth / Bible / Life).<br>
+  <b style="color:white">14. No Personal Attacks</b> - Attack the idea, not the person.<br>
+  <b style="color:white">15. Pray Before You Reply</b> - Don't reply to hurt, reply to heal.<br>
+  <b style="color:white">16. No Private Info</b> - Don't post your phone number, school address or nude photo.<br>
+  <b style="color:white">17. Help The Weak</b> - If someone is depressed, encourage, don't ignore.<br>
+  <b style="color:white">18. No Money Requests</b> - No asking for money or "send MoMo" here.<br>
+  <b style="color:white">19. Youth Leaders Are Final</b> - Respect admin/moderator decisions.<br>
+  <b style="color:white">20. We Are Family</b> - No one prays alone. Lift one, drop one.<br>
+  <br>
+  <span style="color:#60a5fa; font-weight:800;">Break the rules = Warning → Post Deleted → 7-Day Ban → Permanent Ban. Keep this altar holy. 🙏</span>
+  </p>
+</div>
+</div>
+      </p>
+    </div>
+  </div>
+</div>
+<footer>
+ <p>&copy; 2026 Faith Connect Youth | Contact us | Follow on Social Media</p>
+</footer>
+<script src="forum.js"></script>
+</body>
+</html>

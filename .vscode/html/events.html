@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events - Faith Connect Youth</title>
+<link rel="stylesheet" href="events.css">
+</head>
+<body>
+<header>
+  <div class="logo">Faith Connect Youth
+    <img src="bible.jpg" class="bible-green" alt="Bible"> 
+  </div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="Devotionals.html">Devotion</a>
+    <a href="biblestdy.html">Bible Study</a>
+    <a href="prayer.html">Prayer Room</a>
+    <a href="forum.html">Forum</a>
+    <a href="#" class="active">Events</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+<div class="hero">
+  <div>
+    <h1>Our <span>Youth</span> Events 🔥</h1>
+    <p>Don't miss what God is doing. Join us for worship nights, conferences, outreach and more. We are family.</p>
+    <div class="countdown" id="nextCountdown">Next Event Loading...</div>
+  </div>
+  <button class="btn btn-blue" onclick="document.getElementById('addEventCard').scrollIntoView({behavior:'smooth'})">+ Add Event</button>
+</div>
+
+<div class="container">
+  <div>
+    <div class="card" id="addEventCard" style="margin-bottom:20px">
+      <h3 style="font-size:14px;color:#1e40af">CREATE NEW EVENT (Admin)</h3>
+      <input id="eTitle" placeholder="Event title e.g. Youth Worship Night">
+      <select id="eCat">
+        <option value="Youth">Youth Night</option>
+        <option value="Worship">Worship</option>
+        <option value="Conference">Conference</option>
+        <option value="Outreach">Outreach</option>
+      </select>
+      <input id="eDate" type="date">
+      <input id="eTime" type="time">
+      <input id="eLocation" placeholder="Location e.g. Douala - Main Hall">
+      <input id="eDesc" placeholder="Short description">
+      <button class="btn btn-black" id="postEvent" style="width:100%;margin-top:12px">Create Event 🚀</button>
+    </div>
+
+    <div class="filters">
+      <button class="filter active" data-cat="all">All Events</button>
+      <button class="filter" data-cat="Youth">Youth Night</button>
+      <button class="filter" data-cat="Worship">Worship</button>
+      <button class="filter" data-cat="Conference">Conference</button>
+      <button class="filter" data-cat="Outreach">Outreach</button>
+    </div>
+
+    <div id="eventList"></div>
+  </div>
+
+  <div class="side">
+    <div class="card">
+      <h3 style="font-size:14px;margin-bottom:10px">📅 Calendar</h3>
+      <input type="date" id="calDate">
+      <p id="calInfo" style="font-size:13px;color:#64748b;margin-top:10px;line-height:1.5">Select a date to see events.</p>
+    </div>
+
+    <div class="card">
+      <h3 style="font-size:14px;margin-bottom:10px">📊 Event Stats</h3>
+      <div class="stat-row"><span>Total Events</span><b id="statTotal">0</b></div>
+      <div class="stat-row"><span>Registered</span><b id="statReg">0</b></div>
+      <div class="stat-row"><span>Next Event  </span><b id="statNext" style="color:#1e40af">-</b></div>
+    </div>
+
+    <div class="card" style="background:#000;color:white;border:none">
+      <h3 style="font-size:13px;color:#60a5fa">COMMUNITY EVENTS RULES</h3>
+      <p style="font-size:11.5px;color:#94a3b8;line-height:1.7;margin-top:8px">
+      1. Come early - God honors punctuality<br>
+      2. Dress decently<br>
+      3. Invite a friend<br>
+      4. No distraction with phones during worship<br>
+      5. We are family 🙏
+      </p>
+    </div>
+  </div>
+</div>
+
+ <footer>
+    <p>&copy; 2026 Faith Connect Youth | Contact us | Follow on Social Media</p>
+  </footer>
+  <script src="events.js"></script>
+</body>
+</html>
